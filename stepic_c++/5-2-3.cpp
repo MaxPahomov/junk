@@ -39,7 +39,7 @@ struct Rational {
         return * this;
     }
 
-    Rational operator -() {
+    Rational operator -() const {
         Rational tmp(*this);
         tmp.neg();
         return tmp;
